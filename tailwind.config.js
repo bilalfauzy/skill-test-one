@@ -7,11 +7,10 @@ export default {
         mobile: '360px', // Ukuran mobile biasa
         iphone11: '375px', // iPhone 11 Pro
         ipad: '1024px', // iPad Pro 12.9" (portrait)
-        'ipad-landscape': '1366px', // iPad Pro 12.9" (landscape)
         desktop: '1440px', // Deskto[]
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
       },
       fontSize: {
         sm: '0.8125rem', //13px
