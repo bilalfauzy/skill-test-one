@@ -11,15 +11,21 @@ const LandingPage = () => {
   return (
     <>
       <div
+        className="bgimg"
         style={{
           backgroundImage: `url(${bgImg})`,
           backgroundSize: screen.isMobile
-            ? 'cover' // mobile: gambar menutupi area penuh, tapi dipotong 60%
+            ? 'cover'
             : screen.isTablet
-            ? 'cover' // tablet: gambar menutupi 80% dari tinggi
-            : 'cover', // desktop: gambar menutupi penuh
-          backgroundPosition: 'center', // pastikan posisi gambar tetap terfokus di tengah
-          backgroundRepeat: 'no-repeat', // memastikan gambar tidak terulang
+            ? 'cover'
+            : 'cover',
+          backgroundPosition: screen.isMobile
+            ? 'center'
+            : screen.isTablet
+            ? 'center'
+            : 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: screen.isMobile ? '0.8' : screen.isTablet ? '1' : '1',
         }}
       >
         <Navbar screen={screen} />

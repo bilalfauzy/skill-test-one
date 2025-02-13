@@ -2,3 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-search {
+  padding-right: 8px !important;
+}
+
+.custom-ul {
+  margin-right: 24px !important;
+}
+
+.btn-signup {
+  margin-right: 18px !important;
+}
+
+@media (max-width: 760px) {
+  .btn-signup {
+    margin-right: 5px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-item {
+    margin-top: 36px;
+  }
+  .btn-menu {
+    margin-right:200px !important;
+  }
+}
+
+@media (min-width: 760px) {
+  .btn-signup {
+    margin-right: 30px !important;
+  }
+}
+
+@media (min-width: 1020px) {
+  .btn-signup {
+    margin-right: 100px !important;
+  }
+  .menu-item {
+    margin-right: 30px !important;
+  }
+}
+
+/* bg */
+@media (width: 375px) {
+  .bgimg {
+    background-position: -600px !important;
+  }
+}
+
+@media (width: 1024px) {
+  .bgimg {
+    background-position: -1000px !important;
+  }
+}

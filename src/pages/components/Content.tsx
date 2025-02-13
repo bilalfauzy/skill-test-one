@@ -14,7 +14,7 @@ const Content: React.FC<ContentProps> = ({ screen }) => {
       <div
         className={`${
           screen.isMobile
-            ? 'text-center ml-[20px]'
+            ? 'text-center ml-[18px] mr-[10px]'
             : screen.isTablet
             ? 'ml-[84px] text-left'
             : 'ml-[122px] text-left'
@@ -27,10 +27,10 @@ const Content: React.FC<ContentProps> = ({ screen }) => {
               : screen.isTablet
               ? 'text-[56px] font-[700]'
               : 'text-[60px] font-[700]'
-          } text-gray-900 font-sans`}
+          } text-blackf font-sans`}
         >
           Lessons and insights <br />
-          <span className="text-red-500">from 8 years</span>
+          <span className="text-red-500 font-sans">from 8 years</span>
         </h1>
         <p
           className={`${
@@ -39,20 +39,21 @@ const Content: React.FC<ContentProps> = ({ screen }) => {
               : screen.isTablet
               ? 'text-[16px] font-[400]'
               : 'text-[20px] font-[400]'
-          } font-sans mt-4 text-gray-600`}
+          } mt-4 text-blackf font-sans`}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco. " "
+          minim veniam, quis nostrud exercitation ullamco.
         </p>
         <div
+          // style={{ paddingRight: '16px' }}
           className={`${
             screen.isMobile
               ? 'w-[335px] h-[59.85px]'
               : screen.isTablet
               ? 'w-[422px] h-[73px]'
               : 'w-[502px] h-[73px]'
-          } mt-6 flex items-center rounded-[8px] bg-white`}
+          } mt-6 flex items-center rounded-[8px] bg-white justify-between btn-search`}
         >
           <input
             type="text"
@@ -63,10 +64,10 @@ const Content: React.FC<ContentProps> = ({ screen }) => {
                 : screen.isTablet
                 ? 'text-[16px] font-[400]'
                 : 'text-[16px] font-[400]'
-            } border-gray-300 focus:outline-none`}
+            } border-gray-300 focus:outline-none flex-grow`}
           />
           <button
-            className={`bg-red-500 text-white px-6 py-3 items-center rounded-[8px] justify-items-end ${
+            className={`bg-red-500 text-white py-3 items-center rounded-[8px] flex-shrink ${
               screen.isMobile
                 ? 'w-[90.7px] mt-2 text-[14px] font-[700]'
                 : screen.isTablet
