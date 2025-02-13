@@ -45,7 +45,7 @@
 }
 
 /* bg */
-@media (width: 375px) {
+/* @media (width: 375px) {
   .bgimg {
     background-position: -600px !important;
   }
@@ -55,4 +55,4 @@
   .bgimg {
     background-position: -1000px !important;
   }
-}
+} */
